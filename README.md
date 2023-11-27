@@ -1,2 +1,2 @@
-# devops-class
-devops first class
+class
+for practice
