@@ -1,4 +1,0 @@
-FROM ubuntu:18.04
-RUN yum install httpd -y
-COPY index.html /var/www/html/
-ENV user=vyshnavi

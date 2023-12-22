@@ -1,8 +1,0 @@
-FROM ubuntu:18.04
-RUN apt-get update && apt-get install -y openssh-server apache2
-# set root password for SSH access
-RUN echo "root:vyshnavi" | chpasswd
-RUN sed -i 's/#PermitRootLogin yes/PermitRootLogin yes/' /etc/ssh/sshd_config
-RUN sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/                sshd_config
-EXPOSE 22
-ENTRYPOINT [ "/bin/bash","-c","service ssh start && bash" ]
