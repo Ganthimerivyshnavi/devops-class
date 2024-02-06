@@ -3,12 +3,12 @@ pipeline{
         stages{
         stage('stage1'){
          steps{
-         sh 'echo this is from stage 1'
+         sh 'echo this is from the stage 1'
           }
        }
       stage('stage2'){
        steps{
-       sh 'echo this is from stage2'
+       sh 'echo this is from the stage2'
         }
       }
    }
